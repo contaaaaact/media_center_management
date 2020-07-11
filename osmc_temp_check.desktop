@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Terminal=true
+StartupNotify=true
+Name=base_script
+Comment=exécute mon script
+Exec=/home/pi/scripts/osmc_temp_check.sh
+Icon=/usr/share/icons/PiX/32x32/perso/osmc_thermo.png
+Categories=Application; 
+Name[en_GB]=osmc temp check

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Terminal=true
+StartupNotify=true
+Name=base_script
+Comment=exécute mon script
+Exec=/home/pi/scripts/base_script.sh
+Icon=/usr/share/icons/PiX/32x32/perso/script.png
+Categories=Application; 

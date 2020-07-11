@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Terminal=true
+StartupNotify=true
+Name=maj osmc video library
+Comment= mise a jour de la médiathèque video osmc
+Exec=/home/pi/scripts/maj_osmc_videolibrary.sh
+Icon=/usr/share/icons/PiX/32x32/perso/Virgon_flag.png
+Categories=Application; 

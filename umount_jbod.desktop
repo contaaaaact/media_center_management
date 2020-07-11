@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Terminal=true
+StartupNotify=true
+Name=(u)mount volumes
+Comment= démonter ou monter les volumes du media center
+Exec=/home/pi/scripts/umount_jbod.sh
+Icon=/usr/share/icons/PiX/32x32/perso/Picon_flag.png
+Categories=Application; 

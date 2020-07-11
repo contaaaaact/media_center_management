@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Terminal=true
+StartupNotify=true
+Name=clean osmc video library
+Comment= nettoyer la médiathèque video osmc
+Exec=/home/pi/scripts/clean_osmc_videolibrary.sh
+Icon=/usr/share/icons/PiX/32x32/perso/Caprica_flag.png
+Categories=Application; 

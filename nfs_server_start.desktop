@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Terminal=true
+StartupNotify=true
+Name=send series 4k to osmc
+Comment=démarrer le service du serveur nfs
+Exec=/home/pi/scripts/nfs_server_start.sh
+Icon=/usr/share/icons/PiX/32x32/perso/Scorpia_flag.png
+Categories=Application; 
+Name[en_GB]=nfs server start

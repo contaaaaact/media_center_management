@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Terminal=true
+StartupNotify=true
+Name=backup to galactica
+Comment= backup de pegasus vers galactica
+Exec=/home/pi/scripts/backup_jbod_to_galactica.sh
+Icon=/usr/share/icons/PiX/32x32/perso/Aerelon_flag.png
+Categories=Application;

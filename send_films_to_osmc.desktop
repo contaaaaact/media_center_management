@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Terminal=true
+StartupNotify=true
+Name=send films to osmc
+Comment= renommer puis rsync des films de demetrius vers pegasus
+Exec=/home/pi/scripts/renamov_jbod_films.sh
+Icon=/usr/share/icons/PiX/32x32/perso/Gemenon_flag.png
+Categories=Application; 

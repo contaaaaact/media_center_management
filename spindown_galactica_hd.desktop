@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Terminal=true
+StartupNotify=true
+Name=spindown hd
+Comment=spindown dd galactica et demetrius
+Exec=/home/pi/scripts/spindown_galactica_hd.sh
+Icon=/usr/share/icons/PiX/32x32/perso/Cylon2.png
+Categories=Application; 
+

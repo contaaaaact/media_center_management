@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Terminal=true
+StartupNotify=true
+Name=ssh_osmc
+Comment= lance connexion ssh à osmc 192.168.0.21
+Exec=/home/pi/scripts/ssh_osmc.sh
+Icon=/usr/share/icons/PiX/32x32/perso/perso_osmc.png
+Categories=Application; 

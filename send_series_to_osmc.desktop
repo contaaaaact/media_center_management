@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Terminal=true
+StartupNotify=true
+Name=send series to osmc
+Comment=rename et rsync des series de demetrius vers pegasus
+Exec=/home/pi/scripts/renamov_jbod_series.sh
+Icon=/usr/share/icons/PiX/32x32/perso/Leonis_flag.png
+Categories=Application; 
+Name[en_GB]=send series to osmc
