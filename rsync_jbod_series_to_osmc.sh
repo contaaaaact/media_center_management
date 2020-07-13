@@ -8,7 +8,7 @@ DFpegasus3=`df -h /mnt/osmc/pegasus3 | grep "/mnt/osmc" | awk ' { print $5 } ' |
 DFpegasus4=`df -h /mnt/osmc/pegasus4 | grep "/mnt/osmc" | awk ' { print $5 } ' | sed -e 's/%//g'`
 
 #DFtotal=$(($DFpegasus1+$DFpegasus2+$DFpegasus3+$DFpegasus4))
-DFtotal=$((($DFpegasus1+$DFpegasus2+$DFpegasus3+$DFpegasus4)*100)/400))
+DFtotal=$(((($DFpegasus1+$DFpegasus2+$DFpegasus3+$DFpegasus4)*100)/400))
 #DFtotal=$(((($DFpegasus1+$DFpegasus2+$DFpegasus3)*100)/300))
 
 echo "Bond PRL en cours d'initialisation"
