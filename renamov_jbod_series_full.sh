@@ -68,9 +68,9 @@ if [ -d '/mnt/pi/demetrius/download_center/wip_dl/' ]
 		  esac
 		done
 	else
-		echo -e "\nwip_dl n'existe pas" && sleep 1d && exit0
-fi}
-
+		echo -e "\nwip_dl n'existe pas" && sleep 1d && exit 0
+fi
+}
 
 
 { # renommage ou rsync
@@ -28975,7 +28975,7 @@ select i in "${LISTE_Rsync[@]}" ; do
 							;;
 
 							2|n)
-							echo -e "\nBond PRL annulé."
+							echo -e "\nBond PRL annulé." && sleep 5
 							break
 							;;
 
