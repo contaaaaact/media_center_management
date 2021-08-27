@@ -13,7 +13,7 @@ case "$1" in
 			echo "pegasus1"
 			echo -e "\nATTENTION !"
 			echo " "
-			ssh osmc@192.168.0.21 "find /mnt/osmc/pegasus1/ -type f -name '"$NomFichier"' -exec rm -riv '{}' \;" && \
+			ssh osmc@192.168.1.21 "find /mnt/osmc/pegasus1/ -type f -name '"$NomFichier"' -exec rm -riv '{}' \;" && \
 			find /mnt/pi/galactica1/ -type f -name $NomFichier -exec rm -riv '{}' \;
 			;;
 
@@ -22,7 +22,7 @@ case "$1" in
 			echo "pegasus2"
 			echo -e "\nATTENTION !"
 			echo " "
-			ssh osmc@192.168.0.21 "find /mnt/osmc/pegasus2/ -type f -name '"$NomFichier"' -exec rm -riv '{}' \;" && \
+			ssh osmc@192.168.1.21 "find /mnt/osmc/pegasus2/ -type f -name '"$NomFichier"' -exec rm -riv '{}' \;" && \
 			find /mnt/pi/galactica2/ -type f -name $NomFichier -exec rm -riv '{}' \;
 			;;
 
@@ -31,7 +31,7 @@ case "$1" in
 			echo "pegasus3"
 			echo -e "\nATTENTION !"
 			echo " "
-			ssh osmc@192.168.0.21 "find /mnt/osmc/pegasus3/ -type f -name '"$NomFichier"' -exec rm -riv '{}' \;" && \
+			ssh osmc@192.168.1.21 "find /mnt/osmc/pegasus3/ -type f -name '"$NomFichier"' -exec rm -riv '{}' \;" && \
 			find /mnt/pi/galactica3/ -type f -name $NomFichier -exec rm -riv '{}' \;
 			;;
 	
@@ -40,7 +40,7 @@ case "$1" in
 			echo "pegasus4"
 			echo -e "\nATTENTION !"
 			echo " "
-			ssh osmc@192.168.0.21 "find /mnt/osmc/pegasus4/ -type f -name '"$NomFichier"' -exec rm -riv '{}' \;" && \
+			ssh osmc@192.168.1.21 "find /mnt/osmc/pegasus4/ -type f -name '"$NomFichier"' -exec rm -riv '{}' \;" && \
 			find /mnt/pi/galactica4/ -type f -name $NomFichier -exec rm -riv '{}' \;
 			;;
 	*/pi/galactica1/*)
@@ -49,7 +49,7 @@ case "$1" in
 			echo -e "\nATTENTION !"
 			echo " "
 			find /mnt/pi/galactica1/ -type f -name $NomFichier -exec rm -riv '{}' \; && \
-			ssh osmc@192.168.0.21 "find /mnt/osmc/pegasus1/ -type f -name '"$NomFichier"' -exec rm -riv '{}' \;"
+			ssh osmc@192.168.1.21 "find /mnt/osmc/pegasus1/ -type f -name '"$NomFichier"' -exec rm -riv '{}' \;"
 			;;
 
 	*/pi/galactica2/*)
@@ -58,7 +58,7 @@ case "$1" in
 			echo -e "\nATTENTION !"
 			echo " "
 			find /mnt/pi/galactica2/ -type f -name $NomFichier -exec rm -riv '{}' \; && \
-			ssh osmc@192.168.0.21 "find /mnt/osmc/pegasus2/ -type f -name '"$NomFichier"' -exec rm -riv '{}' \;"
+			ssh osmc@192.168.1.21 "find /mnt/osmc/pegasus2/ -type f -name '"$NomFichier"' -exec rm -riv '{}' \;"
 			;;
 
 	*/pi/galactica3/*)
@@ -67,7 +67,7 @@ case "$1" in
 			echo -e "\nATTENTION !"
 			echo " "
 			find /mnt/pi/galactica3/ -type f -name $NomFichier -exec rm -riv '{}' \; && \
-			ssh osmc@192.168.0.21 "find /mnt/osmc/pegasus3/ -type f -name '"$NomFichier"' -exec rm -riv '{}' \;"
+			ssh osmc@192.168.1.21 "find /mnt/osmc/pegasus3/ -type f -name '"$NomFichier"' -exec rm -riv '{}' \;"
 			;;
 	
 	*/pi/galactica4/*)
@@ -76,7 +76,7 @@ case "$1" in
 			echo -e "\nATTENTION !"
 			echo " "
 			find /mnt/pi/galactica4/ -type f -name $NomFichier -exec rm -riv '{}' \; && \
-			ssh osmc@192.168.0.21 "find /mnt/osmc/pegasus4/ -type f -name '"$NomFichier"' -exec rm -riv '{}' \;"
+			ssh osmc@192.168.1.21 "find /mnt/osmc/pegasus4/ -type f -name '"$NomFichier"' -exec rm -riv '{}' \;"
 			;;	
 			
 	*/pi/demetrius/*)

@@ -30,7 +30,7 @@ if [ -d "/mnt/osmc/pegasus4/films" ]
 fi
 
 
-ssh osmc@192.168.0.21 'xbmc-send --action="CleanLibrary(video)"' && echo -e "\nNettoyage de la médiathèque effectué" && sleep 5
+ssh osmc@192.168.1.21 'xbmc-send --action="CleanLibrary(video)"' && echo -e "\nNettoyage de la médiathèque effectué" && sleep 5
 
 
 #fin du script

@@ -3,7 +3,7 @@
 
 #verification de la presence de /media/pegasus4k/films_4k
 
-if ssh osmc@192.168.0.21 [ -d "/media/pegasus4k/films_4k/" ];then
+if ssh osmc@192.168.1.21 [ -d "/media/pegasus4k/films_4k/" ];then
 	echo "Le chemin vers les films 4k de Pegasus4k existe, bond PRL initialisé !";
 else echo "Le chemin vers les films 4k de Pegasus4k n'existe pas, bond PRL annulé." && sleep 1d
 fi && echo "RDV de l'autre côté !" && sleep 1
@@ -11,7 +11,7 @@ fi && echo "RDV de l'autre côté !" && sleep 1
 
 #rsync x2 entre demetrius et pegasus4k
 
-rsync -rtv --progress -e ssh /media/pi/demetrius/download_center/films_4k/ osmc@192.168.0.21:/media/pegasus4k/films_4k/ && rsync -rtv --progress -e ssh /media/pi/demetrius/download_center/films_4k/ osmc@192.168.0.21:/media/pegasus4k/films_4k/ && echo "Bond PRL effectué avec succès !"
+rsync -rtv --progress -e ssh /media/pi/demetrius/download_center/films_4k/ osmc@192.168.1.21:/media/pegasus4k/films_4k/ && rsync -rtv --progress -e ssh /media/pi/demetrius/download_center/films_4k/ osmc@192.168.1.21:/media/pegasus4k/films_4k/ && echo "Bond PRL effectué avec succès !"
 
 
 #demander suppression des fichiers sur demetrius

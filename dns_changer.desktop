@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Terminal=true
+StartupNotify=true
+Name=dns_changer
+Comment=exécute mon script
+Exec=/home/pi/scripts/dns_changer.sh
+Icon=/usr/share/icons/PiX/32x32/perso/script.png
+Categories=Application; 

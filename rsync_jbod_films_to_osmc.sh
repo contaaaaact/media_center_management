@@ -50,7 +50,7 @@ if [ "$DFpegasus1" -le 80 ]
 		rsync -rtv --progress /mnt/pi/demetrius/download_center/films/ /mnt/osmc/pegasus1/films/ && \
 		rsync -rtv --progress /mnt/pi/demetrius/download_center/films/ /mnt/osmc/pegasus1/films/ && \
 		echo -e "\n\nBond PRL effectué avec succès !" && \
-		ssh osmc@192.168.0.21 'xbmc-send --action="UpdateLibrary(video)"' && echo -e "\nMise a jour médiathèque OSMC effectuée" && sleep 1 &&\
+		ssh osmc@192.168.1.21 'xbmc-send --action="UpdateLibrary(video)"' && echo -e "\nMise a jour médiathèque OSMC effectuée" && sleep 1 &&\
 			if [ -d "/mnt/pi/galactica1/films" ]
 				then
 					echo -e "\nBackup sur galactica1 initialisé" && \
@@ -67,7 +67,7 @@ if [ "$DFpegasus1" -le 80 ]
 				rsync -rtv --progress /mnt/pi/demetrius/download_center/films/ /mnt/osmc/pegasus2/films/ && \
 				rsync -rtv --progress /mnt/pi/demetrius/download_center/films/ /mnt/osmc/pegasus2/films/ && \
 				echo -e "\n\nBond PRL effectué avec succès !" && \
-				ssh osmc@192.168.0.21 'xbmc-send --action="UpdateLibrary(video)"' && echo -e "\nMise a jour médiathèque OSMC effectuée" && sleep 1 &&\
+				ssh osmc@192.168.1.21 'xbmc-send --action="UpdateLibrary(video)"' && echo -e "\nMise a jour médiathèque OSMC effectuée" && sleep 1 &&\
 				if [ -d "/mnt/pi/galactica2/films" ]
 					then
 						echo -e "\nBackup sur galactica2 initialisé" && \
@@ -84,7 +84,7 @@ if [ "$DFpegasus1" -le 80 ]
 						rsync -rtv --progress /mnt/pi/demetrius/download_center/films/ /mnt/osmc/pegasus3/films/ && \
 						rsync -rtv --progress /mnt/pi/demetrius/download_center/films/ /mnt/osmc/pegasus3/films/ && \
 						echo -e "\n\nBond PRL effectué avec succès !" && \
-						ssh osmc@192.168.0.21 'xbmc-send --action="UpdateLibrary(video)"' && echo -e "\nMise a jour médiathèque OSMC effectuée" && sleep 1 &&\
+						ssh osmc@192.168.1.21 'xbmc-send --action="UpdateLibrary(video)"' && echo -e "\nMise a jour médiathèque OSMC effectuée" && sleep 1 &&\
 						if [ -d "/mnt/pi/galactica3/films" ]
 							then
 								echo -e "\nBackup sur galactica3 initialisé" && \
@@ -101,7 +101,7 @@ if [ "$DFpegasus1" -le 80 ]
 								rsync -rtv --progress /mnt/pi/demetrius/download_center/films/ /mnt/osmc/pegasus4/films/ && \
 								rsync -rtv --progress /mnt/pi/demetrius/download_center/films/ /mnt/osmc/pegasus4/films/ && \
 								echo -e "\n\nBond PRL effectué avec succès !" && \
-								ssh osmc@192.168.0.21 'xbmc-send --action="UpdateLibrary(video)"' && echo -e "\nMise a jour médiathèque OSMC effectuée" && sleep 1 &&\
+								ssh osmc@192.168.1.21 'xbmc-send --action="UpdateLibrary(video)"' && echo -e "\nMise a jour médiathèque OSMC effectuée" && sleep 1 &&\
 								if [ -d "/mnt/pi/galactica4/films" ]
 									then
 										echo -e "\nBackup sur galactica4 initialisé" && \

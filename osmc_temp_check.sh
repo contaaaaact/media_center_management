@@ -2,7 +2,7 @@
 # Purpose: Display the ARM CPU temperature of Vero 4k
 
 cpu=$(</sys/class/thermal/thermal_zone0/temp)
-tempcpu=`ssh osmc@192.168.0.21 "echo '$((cpu/1000))'"`
+tempcpu=`ssh osmc@192.168.1.21 "echo '$((cpu/1000))'"`
 
 echo "La température CPU de la vero 4K est :"
 echo $tempcpu °C

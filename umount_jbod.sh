@@ -11,7 +11,7 @@ if [ -d "${LISTEHDDgalactica}" ];then
 	ls -a /mnt/pi/galactica3/
 	ls -a /mnt/pi/galactica4/
 
-	if ssh osmc@192.168.0.21 [ -d "${LISTEHDDpegasus}" ];then
+	if ssh osmc@192.168.1.21 [ -d "${LISTEHDDpegasus}" ];then
 			ls -a /mnt/osmc/pegasus1/
 			ls -a /mnt/osmc/pegasus2/
 			ls -a /mnt/osmc/pegasus3/
@@ -36,10 +36,10 @@ if [ -d "${LISTEHDDgalactica}" ];then
 
 					2|p)
 					echo -e "\nDémontage de pegasus initialisé" && sleep 5 && \
-					sudo umount /mnt/osmc/pegasus1 && ssh osmc@192.168.0.21 umount /media/pegasus1 && echo -e "\nDémontage de pegasus1 ok" && \
-					sudo umount /mnt/osmc/pegasus2 && ssh osmc@192.168.0.21 umount /media/pegasus2 && echo -e "\nDémontage de galactica2 ok" && \
-					sudo umount /mnt/osmc/pegasus3 && ssh osmc@192.168.0.21 umount /media/pegasus3 && echo -e "\nDémontage de galactica3 ok" && \
-					sudo umount /mnt/osmc/pegasus4 && ssh osmc@192.168.0.21 umount /media/pegasus4 && echo -e "\nDémontage de galactica1 ok" && \
+					sudo umount /mnt/osmc/pegasus1 && ssh osmc@192.168.1.21 umount /media/pegasus1 && echo -e "\nDémontage de pegasus1 ok" && \
+					sudo umount /mnt/osmc/pegasus2 && ssh osmc@192.168.1.21 umount /media/pegasus2 && echo -e "\nDémontage de galactica2 ok" && \
+					sudo umount /mnt/osmc/pegasus3 && ssh osmc@192.168.1.21 umount /media/pegasus3 && echo -e "\nDémontage de galactica3 ok" && \
+					sudo umount /mnt/osmc/pegasus4 && ssh osmc@192.168.1.21 umount /media/pegasus4 && echo -e "\nDémontage de galactica1 ok" && \
 					break
 					;;
 
@@ -94,10 +94,10 @@ else 	echo -e "\n\nLe chemin vers les disques galactica n'existe pas.\nDémontag
 
 					1|p)
 					echo -e "\nDémontage de pegasus initialisé" && sleep 5 && \
-					sudo umount /mnt/osmc/pegasus1 && ssh osmc@192.168.0.21 umount /media/pegasus1 && echo -e "\nDémontage de pegasus1 ok" && \
-					sudo umount /mnt/osmc/pegasus2 && ssh osmc@192.168.0.21 umount /media/pegasus2 && echo -e "\nDémontage de galactica2 ok" && \
-					sudo umount /mnt/osmc/pegasus3 && ssh osmc@192.168.0.21 umount /media/pegasus3 && echo -e "\nDémontage de galactica3 ok" && \
-					sudo umount /mnt/osmc/pegasus4 && ssh osmc@192.168.0.21 umount /media/pegasus4 && echo -e "\nDémontage de galactica1 ok" && \
+					sudo umount /mnt/osmc/pegasus1 && ssh osmc@192.168.1.21 umount /media/pegasus1 && echo -e "\nDémontage de pegasus1 ok" && \
+					sudo umount /mnt/osmc/pegasus2 && ssh osmc@192.168.1.21 umount /media/pegasus2 && echo -e "\nDémontage de galactica2 ok" && \
+					sudo umount /mnt/osmc/pegasus3 && ssh osmc@192.168.1.21 umount /media/pegasus3 && echo -e "\nDémontage de galactica3 ok" && \
+					sudo umount /mnt/osmc/pegasus4 && ssh osmc@192.168.1.21 umount /media/pegasus4 && echo -e "\nDémontage de galactica1 ok" && \
 					break
 					;;
 

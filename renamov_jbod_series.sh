@@ -5,6 +5,8 @@
 
 if [ -d '/mnt/pi/demetrius/download_center/wip_dl/' ]
 	then
+		cd /mnt/pi/demetrius/download_center/wip_dl/ChronoDownloads/
+		mv * /mnt/pi/demetrius/download_center/wip_dl/
 		cd /mnt/pi/demetrius/download_center/wip_dl/
 		echo -e "\nVoici la liste des downloads récents :"
 		ls -l /mnt/pi/demetrius/download_center/wip_dl/
